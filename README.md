@@ -1,13 +1,11 @@
-# test
+# 共有したい文書
 
-## chapter01
+## 目的
 
-hoge
+md で作成した文書を自動で PDF に変換してデプロイする．
 
-## chapter02
+## 使用技術
 
-fuga
+- `md-to-pdf`
 
-## chapter03
-
-piyo
+- GitHub Actions
