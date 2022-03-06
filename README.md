@@ -1,8 +1,3 @@
----
-stylesheet: https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css
-body_class: markdown-body
----
-
 # 共有したい文書
 
 ## 目的
@@ -14,3 +9,13 @@ md で作成した文書を自動で PDF に変換してデプロイする．
 - `md-to-pdf`
 
 - GitHub Actions
+
+## How to use
+
+1. `src` ディレクトリに md ファイルを設置する．
+
+2. main ブランチにマージすると自動で PDF ファイルが生成されてデプロイされる．
+
+PDF ファイルのパスは以下のとおり．
+
+- `https://taroosg.github.io/md-to-pdf/{MDファイル名}.pdf`
