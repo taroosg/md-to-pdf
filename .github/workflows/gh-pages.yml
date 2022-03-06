@@ -18,6 +18,8 @@ jobs:
         with:
           node-version: "14.*"
       - run: |
+          mkdir dist
+      - run: |
           node -v
           npm install
           node ./index.js

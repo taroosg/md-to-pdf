@@ -1,5 +1,5 @@
-import mtp from "md-to-pdf";
+import { mdToPdf } from "md-to-pdf";
 
-mtp("./README.md", { dest: "dist/README.pdf" }).then(() => {
+mdToPdf({ path: './README.md' }, { dest: "dist/README.pdf" }).then(() => {
   console.log("mtp Done");
 });
