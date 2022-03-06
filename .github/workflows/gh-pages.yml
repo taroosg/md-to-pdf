@@ -16,17 +16,17 @@ jobs:
           fetch-depth: 1
       - uses: actions/setup-node@v1
         with:
-          node-version: "14.*"
+          node-version: "16.*"
       - run: |
           mkdir dist
       - run: |
           node -v
           npm install
           node ./index.js
-      - uses: actions/upload-artifact@v1
-        with:
-          name: create-pdf
-          path: ./dist/README.pdf
+      # - uses: actions/upload-artifact@v1
+      #   with:
+      #     name: create-pdf
+      #     path: ./dist/README.pdf
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
