@@ -20,6 +20,8 @@ jobs:
       - run: |
           mkdir dist
       - run: |
+          sudo apt install fonts-noto
+      - run: |
           node -v
           npm install
           node ./index.js
